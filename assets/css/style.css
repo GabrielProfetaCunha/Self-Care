@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.125rem;
+}
+
+header .logo {
+    margin-left: 30px;
+}
+
+header .logo img {
+    width: 80%;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-right: 30px;
+}
+
+header ul li a img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 15px;
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 222px;
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #a5a1a1;
+    height: 60px;
+}
+
+.promo h2 {
+    margin-left: 20px; 
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.promo p {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--black);
+    margin-right: 20px;
+}
+
+.photos {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+.photos h3 {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--black);
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.photos p {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.photos p span {
+    color: var(--green);
+}
+
+.p1 {
+    background-image: url(../images/product01.jpg);
+}
+
+.p2 {
+    background-image: url(../images/product02.jpg);
+}
+
+.p3 {
+    background-image: url(../images/product03.jpg);
+}
+
+.p4 {
+    background-image: url(../images/product04.jpg);
+}
+
+.p5 {
+    background-image: url(../images/product05.jpg);
+}
+
+.p6 {
+    background-image: url(../images/product06.jpg);
+}
+
+.p7 {
+    background-image: url(../images/product07.jpg);
+}
+
+.p8 {
+    background-image: url(../images/product08.jpg);
+}
+
+.p9 {
+    background-image: url(../images/product09.jpg);
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7,
+.p8,
+.p9 {
+    background-position: center;
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+}
+
+footer {
+    background-color: var(--white);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    border-bottom: 1px solid #a5a1a1;
+    border-top: 1px solid  #a5a1a1;
+    
+}
+
+.contact .etc {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+.contact .etc a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact .email {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .etc2 p {
+    align-self: start;
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.contact .email input {
+    max-width: 346px;
+    height: 43px;
+    border: solid 1px #d9d9d9;
+    margin-left: 50px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.mail::placeholder {
+    padding: 15px;
+    color: #a8a4a4;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact .email .btn {
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    background-color: var(--green);
+    max-width: 346px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.btn:hover {
+    background-color: #478118;
+    transition: all ease 0.3s;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.links .social {
+    display: flex;
+    margin-left: 40px;
+}
+
+.social a img {
+    margin-left: 10px;
+}
+
+.links .payment {
+    display: flex;
+    margin-right: 9px;
+}
+
+.m,
+.p,
+.v {
+    margin-right: 20px;
+}
+
+.m {
+    width: 30px;
+    height: 23px;
+}
+
+.p {
+    width: 14px;
+    height: 17px;
+}
+
+.payment .v {
+    width: 30px;
+    height:10px;
+}
+
+.links a img {
+    width: fit-content;
+    height: 23px;
+
+}
+
+
+
+@media screen and (min-width:500px) {
+
+
+    .photos {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6,
+    .p7,
+    .p8,
+    .p9 {
+    background-position: center;
+    background-size: cover;
+    width: 203px;
+    height: 203px;
+}
+
+
+.contact {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .etc {
+    text-align: center;
+}
+
+.contact .etc2 p {
+    align-self:  center;
+}
+
+.contact .email {
+    align-items: center;
+    
+}
+
+.contact .email input {
+    min-width: 400px;
+}
+
+.contact .email .btn {
+    min-width: 400px;
+}
+
+}
+
+@media  screen and (min-width: 600px) {
+
+    .photos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6,
+    .p7,
+    .p8,
+    .p9  {
+    width: 150px;
+    height: 150px;
+}
+
+}
+
+@media  screen and (min-width: 700px) {
+
+    .photos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6,
+    .p7,
+    .p8,
+    .p9  {
+    width: 200px;
+    height: 200px;
+}
+
+}
+
+@media  screen and (min-width: 800px) {
+
+    .photos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6,
+    .p7,
+    .p8,
+    .p9  {
+    width: 250px;
+    height: 250px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        border-bottom: 1px solid #a5a1a1;
+        border-top: 1px solid  #a5a1a1;
+        
+    }
+
+    .contact .etc {
+        text-align: start;
+    }
+
+    .contact .email {
+        flex-direction: row;
+        margin-right: 20px;
+    }
+
+    .contact .etc2 p {
+        margin-left: 0px;
+    }
+
+    .contact .email .mail {
+        margin: 0;
+        min-width: 300px;
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px
+    }
+
+    .contact .email .btn {
+        margin: 0;
+        min-width: 80px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 12px
+    }
+
+}
+
+@media  screen and (min-width: 1000px) {
+
+    .photos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6,
+    .p7,
+    .p8,
+    .p9  {
+    width: 303px;
+    height: 303px;
+}
+
+}
